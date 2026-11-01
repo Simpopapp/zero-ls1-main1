@@ -12,13 +12,13 @@ O trabalho agentico de remix é guiado por 3 arquivos (N = 1 neste projeto; com 
 - **Os 3 existem:** execute o roadmap, a partir da primeira fase não concluída.
 - **2 existem:** crie o que falta e depois execute.
 - **1 existe:** crie os outros 2 (ordem: planejamento → PRD → roadmap) e depois execute.
-- **Nenhum existe:** informe o project-monitor e em seguida o usuário (a proxima mensagem do usuário deve ser imediatamente colada em project{N} substituindo o "null")
-- **NULL** "null" demarca a não existencia (nesse caso a prioridade é preenche-lo e registrar através do project monitor que aguarda a atualização de um dos arquivos para iniciar o projeto). é obrigatorio confirmar que o agente leu a mensagem
-*(use o oc/monitor apenas pra 2 finalidades, apenas avisar quando algum dos 3 arquivos faltar no inicio ou na respectiva numeração de {n} vigente"(2, 3, 4..)", ou para avisar o que foi feito AO FINAL de daquela rodada de remix (o remix dura enquanto você puder avançar, não se limitando à apenas uma etapa do roadmap)*
+- **Nenhum existe:** pare e peça ao usuário o conteúdo de "project1" (a proxima mensagem do usuário deve ser imediatamente colada em project{N}.md substituindo o "null")
+- **NULL** "null" demarca a não existencia (nesse caso a prioridade é preenche-lo e registrar.
+*(o remix dura enquanto você puder avançar, não se limitando à apenas uma etapa do roadmap)*
 *Para agilizar a produtividade planeje e organize enxame de agentes simultâneos (através de Spawn_agent (nunca oc))para realizar tarefas complexas em paralelo, cada um com um "prd-subagentico", e depois avalie os resultados e melhore o encaixe quando achar valido/util ou necessário*
 
 ### Como criar o que falta + numero de linhas esperado de cada um
-- **PRD:** derive do planejamento (e do roadmap, se existir). Você conhece o ambiente melhor que o planejamento: confirme no código o que ele afirma, escolha a melhor solução técnica, escreva escopo por fase e critérios de aceite. Não copie o planejamento. (min: 500 / max: 1000)
+- **PRD:** derive do planejamento (e do roadmap, se existir). Você conhece o ambiente melhor que o planejamento: confirme no código o que ele afirma, escolha a melhor solução técnica, escreva escopo por fase e critérios de aceite. Não copie o planejamento. (min: 500 / max: 1000) (obs: o agente à fazer algo grande e bem feito num nivel que desafie suas proprias capacidades agenticas ao limite de seu potencial. o potencial do projeto em hipotese alguma deve ser subestimado, a ideia é atingir o maximo do potencial e correndo o risco de errar pelo "mais" e nunca pelo "menos", planeje com maestria o conteudo do arquivo)
 - **Roadmap:** uma fase por bloco do planejamento/PRD, em ordem de dependência, com checkboxes e uma linha de Gates por fase. (min: 20 / max: 50)
 - **Planejamento** (se só houver PRD/roadmap): reconstrua a intenção: problemas, direção e ordem lógica para cria-los a partir disso. (min: 1 / max: 100)
 - **Qualidade acima da facilidade** nunca preencha o numero de linhas pensando em concluir atingir o numero de linhas forçadamente pra completar a tarefa, use como oportunidade criativa para planejar os detalhes, cada linha tem o seu propósito e importancia para atingir o auge do potencial sem se limitar pela praticidade da realização de tarefas simples ou mal planejadas
@@ -38,9 +38,8 @@ O trabalho agentico de remix é guiado por 3 arquivos (N = 1 neste projeto; com 
 - Sempre que um remix for ativado através do comando "I've successfully remixed this project. What would be a good next step?"
 
 ### Quando e como finalizar
-- Sempre que um grande objetivo do roadmap for concluido 
-- Obrigatorio avisar o opencode que o remix foi finalizado com a seguinte mensagem: "remix finalizado (+{N} da etapa do roadmap que foi efetuada)
-- Em tarefas de complexidade media/alta sempre guie o agente para olhar as melhores tools e skills e utiliza-las da melhor forma para realizar cada tipo de trabalho
+- Sempre que um projeto for finalizado com maestria digna de um projeto "AAA" comparavel à projetos dos "Awwwards" em aparencia, e com todas as funcionalidades funcionando como o esperado (ou um grande objetivo do roadmap for concluido, em casos especificos de mais etapas do que for capaz de continuar). 
+- Em tarefas de complexidade media/alta sempre olhar as melhores tools e skills e utiliza-las da melhor forma para realizar cada tipo de trabalho
 
 ---
 
@@ -72,4 +71,4 @@ Subagente aqui NÃO é executor de tarefinha. É um **executor completo de um pa
 ### Observações (obrigatórias)
 1. **Mecanismo:** os subagentes são acionados com a tool **`spawn_agent`** e orientados por **system prompt + prompt**. Os arquivos dos 3 pilares centrais **e** os 3 pilares individuais de cada subagente devem estar presentes no system prompt dele. O suporte à tool `spawn_agent` já existe nas skills de ambiente: consulte-as para a sintaxe e os limites reais; o resto do harness o agente principal já conhece.
 2. **Meta de alcance:** o enxame existe para exponencializar a produção e permitir a conclusão parcial ou total do projeto inteiro dentro de **um único remix**. Se o projeto não couber inteiro, deixe o roadmap central com o estado exato (checkboxes, gates, e uma linha "Próximo remix: …" apontando a primeira fase/pacote pendente e o que já está pronto em cada pacote em andamento), de modo que o remix seguinte retome sem ter que redescobrir o que falta.
-3. Monitor não é obrigatorio até que seja realizada a conclusão de todas as estapas dos roadmaps existentes. (sempre verificar a numeração variavel vigente de {N})
+3. Monitor não é obrigatorio até que seja realizada a conclusão de todas as estapas dos roadmaps existentes. (sempre verificar a numeração variavel vigente de project{N})

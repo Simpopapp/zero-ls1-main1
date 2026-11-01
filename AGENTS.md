@@ -25,7 +25,7 @@
 - um remix é ativado quando se recebe o comando "I've successfully remixed this project. What would be a good next step?" ou "I've remixed this project, but there are still some steps required to get it up and running. 
 
 Can you help me with the following actions:
-1. Cleared the copied Drizzle migrations and rescaffolded an empty migration set for the new project's database". para iniciar um remix é obrigatorio usar o project monitor e seguir as regras do plan.md para evitar bugs e erros no projeto.
+1. Cleared the copied Drizzle migrations and rescaffolded an empty migration set for the new project's database". para iniciar um remix siga conforme o plan.md do projeto em "/.opencode/" para evitar bugs e erros no projeto.
 - Nunca use o opencode para fazer tarefas de um remix.
 - Nunca confunda informar o monitor do projeto com fazer uma ask para o usuário (tem uma skill pra isso).
 - Nunca pergunte qualquer coisa ao usuário antes de completar todas as etapas de produção dos 3 pilares (1- se algum pilar faltar é sua missão planejar os demais e seguir adiante. 2- Se todos os 3 pilares estiverem null o remix é cancelado. informe o usuário e cole a proxima mensagem dele em "project{n}.md" sem realizar mais ações).

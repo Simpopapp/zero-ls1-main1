@@ -18,6 +18,10 @@ O trabalho agentico de remix é guiado por 3 arquivos (N = 1 neste projeto; com 
 *Para agilizar a produtividade planeje e organize enxame de agentes simultâneos (através de Spawn_agent (nunca oc))para realizar tarefas complexas em paralelo, cada um com um "prd-subagentico", e depois avalie os resultados e melhore o encaixe quando achar valido/util ou necessário*
 *Se todos os 3 pilares estiverem null o remix é cancelado. informe o usuário e cole a proxima mensagem dele em "project{n}.md" sem realizar mais ações a partir de então (isso significa que NENUMA OUTRA ALTERAÇÃO DEVE SER FEITA ALÉM DESSA, POIS O REMIX JÁ TERÁ SIDO CANCELADO NESSE CASO).* ATENÇÃO: ESSA AÇÃO NÃO REATIVA O REMIX, APÓS O USUÁRIO ENVIAR A MENSAGEM ELA DEVE SER COLADA EM PROJECT{N} E VOCÊ NÃO DEVE SEGUIR PARA A CRIAÇÃO DOS OUTROS PILARES NEM REALIZAÇÃO DA TAREFA DESCRITA PELO USUÁRIO, APENAS COLCAR O CONTEUDO DA MENSAGEM EM "PROJECT{N}" E EM SEGUIDA PARAR E AVISAR O USUÁRIO.
 
+### Cancelamento de remix
+
+- ocorre se os 3 pilares estiverem null
+
 ### Como criar o que falta + numero de linhas esperado de cada um
 - **PRD:** derive do planejamento (e do roadmap, se existir). Você conhece o ambiente melhor que o planejamento: confirme no código o que ele afirma, escolha a melhor solução técnica, escreva escopo por fase e critérios de aceite. Não copie o planejamento. (min: 500 / max: 1000) (obs: o agente à fazer algo grande e bem feito num nivel que desafie suas proprias capacidades agenticas ao limite de seu potencial. o potencial do projeto em hipotese alguma deve ser subestimado, a ideia é atingir o maximo do potencial e correndo o risco de errar pelo "mais" e nunca pelo "menos", planeje com maestria o conteudo do arquivo)
 - **Roadmap:** uma fase por bloco do planejamento/PRD, em ordem de dependência, com checkboxes e uma linha de Gates por fase. (min: 20 / max: 50)
